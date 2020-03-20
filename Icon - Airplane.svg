@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>1.3 Icon / Icon - Airplane</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.4517567,14 L8.71572184,8.77666079 L5.97968701,11.5126956 L6.22841745,13.2538087 L5.48222614,14 L4.23857395,11.7614261 L2,10.5177739 L2.74619132,9.77158255 L4.48730438,10.020313 L7.22333921,7.28427816 L2,4.54824334 L2.99492175,3.55332159 L9.46191315,5.04570422 L12.197948,2.3096694 C12.6108405,1.89677687 13.2774381,1.89677687 13.6903306,2.3096694 C14.1032231,2.72256192 14.1032231,3.3891595 13.6903306,3.80205203 L10.9542958,6.53808685 L12.4466784,13.0050782 L11.4517567,14 Z" id="path-1"></path>
+    </defs>
+    <g id="1.3-Icon-/-Icon---Airplane" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Icon" fill="#000000" xlink:href="#path-1"></use>
+    </g>
+</svg>

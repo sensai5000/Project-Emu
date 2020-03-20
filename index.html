@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Emu_JB</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app_container">
+<div id="page_header">
+  <div class="logo_container">
+  <img src="https://www.rockwellcollins.com/-/media/images/logo/collins-aerospace-white-302x67.png?bc=white&as=0&h=189&la=en&w=570&lastupdate=20181211165509&hash=8246f3180bf680caa49d7749489bbf38127f22c2" id="logo">
+  </div>
+  <div class="user_container">
+    <p class="user_info">
+      Robert Diggs
+      <i class="material-icons dropdown_icon" >keyboard_arrow_down</i>
+    </p>
+  </div>
+</div>
+<div class="body_container">
+  <div class="card_container">
+    <div class="card_container_header">
+      <h2>
+        Fleet
+      </h2>
+    </div>
+    <div class="card card_selected">
+      <span class="edge_status_one edge_status  status_blue">
+      </span>
+      <div class="card_header">
+        <h4>
+          N935JB
+        </h4>
+      </div>
+      <div class="card_body">
+        <span class="status_dot status_on">
+        </span>
+        <h5 class="status_message">
+          AID Streaming On
+        </h5>
+      </div>
+    </div>
+    <div class="card">
+      <span class="edge_status status_blue">
+      </span>
+      <div class="card_header">
+        <h4>
+          N929JB
+        </h4>
+      </div>
+      <div class="card_body">
+        <span class="status_dot status_off">
+        </span>
+        <h5 class="status_message">
+          AID Streaming Off
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="main_view_container">
+    <div class="main_view_header">
+
+      <div class="main_tail">
+        <h1>
+          N935JB
+        </h1>
+      </div>
+      <div class="current_flight_in_header">
+        <h4>
+          Flight: JBU24
+        </h4>
+      </div>
+      <div class="current_flight_status_viz">
+        <div class="flight_tracker">
+        <div class="depature_city">
+          <h4>
+            LAX
+          </h4>
+        </div>
+        <span class="flight_path"></span>
+        <i class="material-icons plane" >airplanemode_active</i>
+        <div class="flight_line">
+        </div>
+        <div class="arrival_city">
+          <h4>
+            JFK
+          </h4>
+        </div>
+      </div>
+    </div>
+      <div class="time_left">
+        <h4>
+          3HR 53MIN Left
+        </h4>
+      </div>
+    </div>
+    <div class="accordions_container">
+
+
+      <button class="accordion " id="accordion1" >
+        Issues
+        <i class="material-icons accordion_icon issues_caret" id="accordionIcon">
+          keyboard_arrow_down
+        </i>
+      </button>
+<div class="panel" id="panel_first" style="">
+  <table class="table">
+    <th class="table_header first">
+      Component
+    </th>
+    <th class="table_header">
+      Issue
+    </th>
+    <th class="table_header">
+      Description
+    </th>
+    <th class="table_header">
+      Alert Time
+    </th>
+    <tr class="edge_status_red">
+      <td class="table_data first" >
+        <span class="table_edge_status_yellow"> </span>
+        IDG 1
+      </td>
+      <td class="table_data">
+       Oil Outlet Temperature High
+      </td>
+      <td class="table_data">
+        Temperature exceeded 140°C
+      </td>
+      <td class="table_data">
+        18:27 GMT<br> Feb. 11, 2020
+      </td>
+    </tr>
+    <!--<tr class="edge_status_yellow">
+      <td class="table_data first">
+        FS
+      </td>
+      <td class="table_data">
+      Fuel Temperature High
+      </td>
+      <td class="table_data">
+        Temperature exceeded 120°C
+      </td>
+      <td class="table_data">
+        22:34 GMT <br>
+        Feb. 11, 2020
+      </td>
+    </tr>-->
+  </table>
+</div>
+
+<button class="accordion active" id="accordion2">
+  Flight schedule
+  <i class="material-icons accordion_icon" id="accordionIcon2">
+    keyboard_arrow_up
+  </i>
+</button>
+<div class="panel" style="display:block">
+  <table class="table flight_schedule_table">
+    <th class="table_header first">
+      Flight #
+    </th>
+    <th class="table_header">
+      Flight Path
+    </th>
+    <th class="table_header">
+      Departure
+    </th>
+    <th class="table_header">
+      Arrival
+    </th>
+    <tr class="">
+      <td class="table_data first">
+        JBU24
+      </td>
+      <td class="table_data">
+       LAX > JFK
+      </td>
+      <td class="table_data">
+        12:40 GMT (Actual) <br>
+        Feb. 11, 2020
+      </td>
+      <td class="table_data">
+        18:27 GMT (Scheduled)<br>
+        Feb. 11, 2020
+      </td>
+    </tr>
+    <tr class="">
+      <td class="table_data first">
+        JBU523
+      </td>
+      <td class="table_data">
+      JFK > LAX
+      </td>
+      <td class="table_data">
+        19:55 GMT (Scheduled) <br>
+  Feb. 11, 2020
+      </td>
+      <td class="table_data">
+        22:34 GMT (Scheduled)<br>
+  Feb. 11, 2020
+      </td>
+    </tr>
+    <tr class="">
+      <td class="table_data first">
+        JBU700
+      </td>
+      <td class="table_data">
+      LAX > FLL
+      </td>
+      <td class="table_data">
+        23:15 GMT (Scheduled) <br>
+  Feb. 11, 2020
+      </td>
+      <td class="table_data">
+        02:22 GMT (Scheduled)<br>
+  Feb. 12, 2020
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!--<button class="accordion">
+  Parameters
+  <i class="material-icons accordion_icon">
+    keyboard_arrow_down
+  </i>
+</button>
+<div class="panel">
+
+</div>-->
+
+<div class="parameters_label">
+<h4>
+Parameters
+</h4>
+</div>
+
+  <div class="parameters_container">
+    <div class="parameters_container_header">
+    <button class="emu_button">Download as CSV</button>
+  </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          ENG 1: Oil Quantity (Qts.)
+        </h4>
+      </div>
+      <div id="main" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          ENG 2: Oil Quantity (Qts.)
+        </h4>
+      </div>
+      <div id="main2" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          ENG 1: EGT (°C)
+        </h4>
+      </div>
+      <div id="main3" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          ENG 2: EGT (°C)
+        </h4>
+      </div>
+      <div id="main4" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          Normal Acceleration
+        </h4>
+      </div>
+      <div id="main5" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+    <div class="parameter_surface">
+      <div class="parameter_name">
+        <h4>
+          Lateral Acceleration
+        </h4>
+      </div>
+      <div id="main6" class="charts" style="height:125px; width:100%;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+</div>
+
+<div class="alert_card">
+  <div class="alert_title_container">
+    <h4 class="alert_title">
+      New Issues
+    </h4>
+  </div>
+  <div class="alert_body_container">
+    <p class="alert_body">
+      IDG 1 - Oil Outlet Temperature has exceeded 162° C
+    </p>
+  </div>
+  <div class="alert_actions_container">
+    <button class="alert_button">DISMISS</button>
+  </div>
+</div>
+
+<!-- partial -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+  <script>
+  $('#accordion1').click(function(){
+    $('#accordionIcon').toggleClass("clicked")
+  });
+  $('#accordion2').click(function(){
+    $('#accordionIcon2').toggleClass("clicked")
+  });
+  </script>
+  <script>
+  $(document).ready(function () {
+    setTimeout(function(){
+        $('.alert_card').css('display', 'inline');
+      },4000);
+      setTimeout(function(){
+        $('.alert_card').css('opacity', '1');
+        $('.alert_card').css('right', '8px');
+        $('.edge_status_one').css('background-color', '#FFC40B');
+        $('.flight_path').css('border-top','2px solid #FFC40B');
+        $('.plane').css('color','#FFC40B');
+        setTimeout(function(){
+        $('#panel_first').css('display','block');
+        $('#accordion1').toggleClass('active');
+        $('#accordionIcon').toggleClass('clicked');
+      }, 100);
+        setTimeout(function(){
+          setTimeout(function(){
+          $('.alert_card').css('display', 'none');
+        }, 1000);
+          $('.alert_card').css('right', '-400px');
+          $('.alert_card').css('opacity', '0');
+        }, 10000);
+    }, 5000);
+});
+
+  $('.alert_button').click(function(){
+    setTimeout(function(){
+    $('.alert_card').css('display', 'none');
+  },500);
+    $('.alert_card').css('right', '-400px');
+    $('.alert_card').css('opacity', '0');
+
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
