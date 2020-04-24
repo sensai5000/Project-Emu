@@ -33,8 +33,10 @@
     <div class="card card_selected">
       <span class="edge_status_one edge_status  status_blue">
       </span>
+
       <div class="card_header">
         <h4>
+          <img src="Tail_Icon.svg" style="display:inline; margin-right:3px"></img>
           N935JB
         </h4>
       </div>
@@ -51,6 +53,7 @@
       </span>
       <div class="card_header">
         <h4>
+          <img src="Tail_Icon.svg" style="display:inline;margin-right:3px"></img>
           N929JB
         </h4>
       </div>
@@ -110,7 +113,9 @@
         </i>
       </button>
 <div class="panel" id="panel_first" style="">
+  <div style="border:1px solid #D1D1D1; border-radius:2px;">
   <table class="table">
+    <tr class="tr_border_bottom">
     <th class="table_header first">
       Component
     </th>
@@ -123,6 +128,7 @@
     <th class="table_header">
       Alert Time
     </th>
+  </tr>
     <tr class="edge_status_red">
       <td class="table_data first" >
         <span class="table_edge_status_yellow"> </span>
@@ -155,6 +161,7 @@
     </tr>-->
   </table>
 </div>
+</div>
 
 <button class="accordion active" id="accordion2">
   Flight schedule
@@ -163,7 +170,9 @@
   </i>
 </button>
 <div class="panel" style="display:block">
+  <div style="border:1px solid #D1D1D1; border-radius:2px;">
   <table class="table flight_schedule_table">
+    <tr class="tr_border_bottom">
     <th class="table_header first">
       Flight #
     </th>
@@ -176,7 +185,8 @@
     <th class="table_header">
       Arrival
     </th>
-    <tr class="">
+  </tr>
+    <tr class="tr_border_bottom">
       <td class="table_data first">
         JBU24
       </td>
@@ -192,7 +202,7 @@
         Feb. 11, 2020
       </td>
     </tr>
-    <tr class="">
+    <tr class="tr_border_bottom">
       <td class="table_data first">
         JBU523
       </td>
@@ -226,6 +236,7 @@
     </tr>
   </table>
 </div>
+</div>
 
 <!--<button class="accordion">
   Parameters
@@ -245,53 +256,126 @@ Parameters
 
   <div class="parameters_container">
     <div class="parameters_container_header">
+    <div class="multi_select_container">
+      <div class="chip" id="chip_1">
+        <p class="chip_text">
+        ENG 1: Oil Quantity (Qts.)
+        <i class="material-icons accordion_icon chip_icon" id="chip_1_icon">
+          close
+        </i>
+        <p>
+
+      </div>
+      <div class="chip" id="chip_2">
+        <p class="chip_text">
+        ENG 2: Oil Quantity (Qts.)
+        <i class="material-icons accordion_icon chip_icon" id="chip_2_icon">
+          close
+        </i>
+        <p>
+      </div>
+      <div class="chip" id="chip_3">
+        <p class="chip_text">
+        ENG 1: EGT (°C)
+        <i class="material-icons accordion_icon chip_icon" id="chip_3_icon">
+          close
+        </i>
+        <p>
+      </div>
+      <div class="chip" id="chip_4">
+        <p class="chip_text">
+        ENG 2: EGT (°C)
+        <i class="material-icons accordion_icon chip_icon" id="chip_4_icon">
+          close
+        </i>
+        <p>
+      </div>
+      <div class="chip" id="chip_5">
+        <p class="chip_text">
+        Normal Acceleration
+        <i class="material-icons accordion_icon chip_icon" id="chip_5_icon">
+          close
+        </i>
+        <p>
+      </div>
+      <div class="chip" id="chip_6">
+        <p class="chip_text">
+        Lateral Acceleration
+        <i class="material-icons accordion_icon chip_icon" id="chip_6_icon" >
+          close
+        </i>
+        <p>
+      </div>
+      <i class="material-icons accordion_icon" id="select_icon">
+        keyboard_arrow_down
+      </i>
+    </div>
     <button class="emu_button">Download as CSV</button>
   </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param1">
       <div class="parameter_name">
         <h4>
           ENG 1: Oil Quantity (Qts.)
+
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_1_close_icon">
+          close
+        </i>
       </div>
       <div id="main" class="charts" style="height:125px; width:100%;"></div>
     </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param2">
       <div class="parameter_name">
         <h4>
           ENG 2: Oil Quantity (Qts.)
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_2_close_icon">
+          close
+        </i>
       </div>
       <div id="main2" class="charts" style="height:125px; width:100%;"></div>
     </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param3">
       <div class="parameter_name">
         <h4>
           ENG 1: EGT (°C)
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_3_close_icon">
+          close
+        </i>
       </div>
       <div id="main3" class="charts" style="height:125px; width:100%;"></div>
     </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param4">
       <div class="parameter_name">
         <h4>
           ENG 2: EGT (°C)
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_4_close_icon">
+          close
+        </i>
       </div>
       <div id="main4" class="charts" style="height:125px; width:100%;"></div>
     </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param5">
       <div class="parameter_name">
         <h4>
           Normal Acceleration
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_5_close_icon">
+          close
+        </i>
       </div>
       <div id="main5" class="charts" style="height:125px; width:100%;"></div>
     </div>
-    <div class="parameter_surface">
+    <div class="parameter_surface" id="param6">
       <div class="parameter_name">
         <h4>
           Lateral Acceleration
         </h4>
+        <i class="material-icons accordion_icon chart_close_icon" id="chart_6_close_icon">
+          close
+        </i>
       </div>
       <div id="main6" class="charts" style="height:125px; width:100%;"></div>
     </div>
@@ -322,6 +406,7 @@ Parameters
 </div>
 
 <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -351,6 +436,63 @@ for (i = 0; i < acc.length; i++) {
     $('#accordionIcon2').toggleClass("clicked")
   });
   </script>
+
+  <script>
+  $('#chip_1_icon').click(function(){
+    $('#chip_1').css("display","none");
+    $('#param1').css("display","none");
+  });
+  $('#chip_2_icon').click(function(){
+    $('#chip_2').css("display","none");
+    $('#param2').css("display","none");
+  });
+  $('#chip_3_icon').click(function(){
+    $('#chip_3').css("display","none");
+    $('#param3').css("display","none");
+  });
+  $('#chip_4_icon').click(function(){
+    $('#chip_4').css("display","none");
+    $('#param4').css("display","none");
+  });
+  $('#chip_5_icon').click(function(){
+    $('#chip_5').css("display","none");
+    $('#param5').css("display","none");
+  });
+  $('#chip_6_icon').click(function(){
+    $('#chip_6').css("display","none");
+    $('#param6').css("display","none");
+  });
+
+  </script>
+
+  <script>
+  $('#chart_1_close_icon').click(function(){
+    $('#param1').css("display","none");
+    $('#chip_1').css("display","none");
+  });
+  $('#chart_2_close_icon').click(function(){
+    $('#param2').css("display","none");
+    $('#chip_2').css("display","none");
+  });
+  $('#chart_3_close_icon').click(function(){
+    $('#param3').css("display","none");
+    $('#chip_3').css("display","none");
+  });
+  $('#chart_4_close_icon').click(function(){
+    $('#param4').css("display","none");
+    $('#chip_4').css("display","none");
+  });
+  $('#chart_5_close_icon').click(function(){
+    $('#param5').css("display","none");
+    $('#chip_5').css("display","none");
+  });
+  $('#chart_6_close_icon').click(function(){
+    $('#param6').css("display","none");
+    $('#chip_6').css("display","none");
+  });
+
+  </script>
+
   <script>
   $(document).ready(function () {
     setTimeout(function(){
@@ -385,8 +527,8 @@ for (i = 0; i < acc.length; i++) {
     $('.alert_card').css('opacity', '0');
 
   });
-  </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+</script>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts.js'></script><script  src="./script.js"></script>
 
 </body>

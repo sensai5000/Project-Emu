@@ -75,6 +75,10 @@ var option = {
     },
     tooltip:{
       trigger: 'axis',
+      backgroundColor: 'rgba(232, 232, 232, .9)',
+      textStyle:{
+        color:'#000000',
+      }
     },
     grid: {
       right: 16,
@@ -170,6 +174,10 @@ var option2 = {
     },
     tooltip:{
       trigger: 'axis',
+      backgroundColor: 'rgba(232, 232, 232, .9)',
+      textStyle:{
+        color:'#000000',
+      }
     },
     grid: {
       right: 16,
@@ -265,6 +273,10 @@ var option3 = {
     },
     tooltip:{
       trigger: 'axis',
+      backgroundColor: 'rgba(232, 232, 232, .9)',
+      textStyle:{
+        color:'#000000',
+      }
     },
     grid: {
       right: 16,
@@ -361,6 +373,10 @@ var option4 = {
     },
     tooltip:{
       trigger: 'axis',
+      backgroundColor: 'rgba(232, 232, 232, .9)',
+      textStyle:{
+        color:'#000000',
+      }
     },
     grid: {
       right: 16,
@@ -456,6 +472,10 @@ var option5 = {
     },
     tooltip:{
       trigger: 'axis',
+      backgroundColor: 'rgba(232, 232, 232, .9)',
+      textStyle:{
+        color:'#000000',
+      }
     },
     grid: {
       right: 16,
